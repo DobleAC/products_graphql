@@ -5,7 +5,7 @@ const resolvers = require('./resolvers/userResolver');
 const { mergeTypeDefs, mergeResolvers } = require('@graphql-tools/merge'); 
 
 const startServer = async ()=>{
-   await  mongoose.connect('mongodb+srv://ceurhernandezro:admin@task.lxkxc.mongodb.net/?retryWrites=true&w=majority&appName=task');
+   await  mongoose.connect('mongodb+srv://AARONCM:VANDREAD@task.edees.mongodb.net/?retryWrites=true&w=majority&appName=TASK');
     
    const server = new ApolloServer({typeDefs,resolvers});
     server.listen().then(({url}) => {
